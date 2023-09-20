@@ -28,15 +28,23 @@ body{
 
 header{
 	width: 100%;
-	background-image: linear-gradient(to bottom right, #811331, skyblue);
+/*	background-image: linear-gradient(to bottom right, #811331, skyblue);*/
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
 
-main{
+main .content{
+  background-color: white;
   max-width: 600px;
   margin: 0 auto;
+}
+
+main{
+  background-color: white;
+  max-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 main h2{
@@ -62,6 +70,13 @@ header ul{
 header li{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+.animation_background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 a:link,
@@ -125,5 +140,5 @@ a:hover {
 footer{
 	padding: 50px;
 	color: white;
-	background-image: linear-gradient(to right, #847997, skyblue);
+/*	background-image: linear-gradient(to right, #847997, skyblue);*/
 }
