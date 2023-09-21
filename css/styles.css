@@ -94,6 +94,14 @@ a:hover {
   text-decoration: underline;
 }
 
+main a:link, main a:visited{
+  color: black;
+  text-decoration: underline;
+}
+main a:hover{
+  text-decoration: initial;
+}
+
 .menu > li{
 	display: inline;
 }
@@ -141,6 +149,18 @@ a:hover {
   z-index: 2;
   position: relative;
   cursor: pointer;
+}
+
+.cv_viewer{
+  background: white;
+  max-width: 100%;
+}
+
+div.pdf_viewer{
+  background: white;
+  max-width: 80%;
+  height: 800px;
+  margin: 0 auto;
 }
 
 footer{
