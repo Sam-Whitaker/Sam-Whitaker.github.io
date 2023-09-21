@@ -170,13 +170,13 @@ footer{
 }
 
 .slideshow_container p{
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
 .slideshow {
   position: relative;
-  margin-top: 30;
+  padding-top: 10px;
 }
 
 /* Hide the images by default */
