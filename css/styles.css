@@ -169,9 +169,14 @@ footer{
 /*	background-image: linear-gradient(to right, #847997, skyblue);*/
 }
 
+.slideshow_container p{
+  margin-bottom: 20;
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .slideshow {
   position: relative;
+  margin-top: 30;
 }
 
 /* Hide the images by default */
@@ -214,22 +219,22 @@ footer{
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+/*.numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-
+*/
 /* Container for image text */
 /*.caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
-}
-*/
+}*/
+
 .row:after {
   content: "";
   display: table;
