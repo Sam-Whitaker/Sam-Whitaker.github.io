@@ -50,7 +50,68 @@
         <p>My usual day-to-day is often spent coding up complex algorithms in R or Python but, when I get a break from running countless simulations, I like to keep my brain stimulated with one of my many hobbies: enthusiast wildlife photographer, beginner banjo player, casual gamer, avid Burnley Football Club supporter, huge nature lover and now website creator. I'm always keen to try new things which, coupled with my passion for learning, means there's always a chance that a new hobby of mine is just around the corner!</p>
         <div>
             Below is a sample of my photography endeavours.
-        </div>
+            <div class="slideshow">
+                <div class="mySlides fade">
+                    <img src="img/flamingoL.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/blackbird.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/bee.png" style="width:100%">
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="img/flamingoL.png" style="width: 100%" onclick="currentSlide(1)" alt="Flamingo">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/blackbird.png" style="width: 100%" onclick="currentSlide(2)" alt="Blackbird">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="img/bee.png" style="width: 100%" onclick="currentSlide(3)" alt="Bee">
+                    </div>
+                </div>
+            </div>
+        <!-- The dots/circles -->
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
         </div>
     </main>
     <!-- Content for the footer -->
