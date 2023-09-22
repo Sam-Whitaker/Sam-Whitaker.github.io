@@ -265,6 +265,7 @@ footer{
 .mobile-pdf {
     display: block;
 }
+
 @media only screen  and (min-width : 1025px) {
 
   .mobile-pdf {
