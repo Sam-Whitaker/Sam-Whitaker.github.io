@@ -31,8 +31,9 @@ header{
 /*	background-image: linear-gradient(to bottom right, #811331, skyblue);*/
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
   justify-content: center;
+  line-height: 1.6;
 }
 
 main .content{
@@ -63,7 +64,7 @@ header img{
 
 header h1{
 	color: white;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -275,4 +276,13 @@ footer{
   .desktop-pdf {
       display: block;
   }
+}
+
+/* Adding styles for publications list items */
+.papers a:link, a:visited {
+  text-decoration: none;
+}
+
+.papers a:hover {
+  text-decoration: underline;
 }
