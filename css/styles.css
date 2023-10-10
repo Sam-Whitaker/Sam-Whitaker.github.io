@@ -60,6 +60,7 @@ header img{
     border-radius: 170px;
     width: 300px;
     border: 10px solid white;
+    position: relative;
 }
 
 header h1{
